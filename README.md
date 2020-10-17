@@ -15,8 +15,8 @@ Refer to our Meetup page: https://www.meetup.com/Kalispell-Software-Crafters/
 - [ ] Add GitHub Section
 - [ ] Add Slack and Discord Section
 - [ ] Add Initial Basic Styles
-  - [ ] Center content
-  - [ ] Add blue background color (#00a2e8) and white text
+- [x] Center content
+- [x] Add blue background color (#00a2e8) and white text
 
 ## Deployment
 
