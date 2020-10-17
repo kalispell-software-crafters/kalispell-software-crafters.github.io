@@ -8,7 +8,7 @@ Check it out here: https://kalispell-software-crafters.github.io/index.html
 
 Refer to our Meetup page: https://www.meetup.com/Kalispell-Software-Crafters/
 
-- [ ] Add Overview Section
+- [x] Add Overview Section
 - [ ] Add Meetings Section
 - [ ] Add Book Club Section
 - [ ] Add Beginners Section
