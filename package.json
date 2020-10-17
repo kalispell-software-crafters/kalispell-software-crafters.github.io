@@ -16,7 +16,7 @@
     "rimraf": "^3.0.2"
   },
   "dependencies": {
-    "core-js": "^3.6.4",
-    "regenerator-runtime": "^0.13.5"
+    "core-js": "^3.6.5",
+    "regenerator-runtime": "^0.13.7"
   }
 }
