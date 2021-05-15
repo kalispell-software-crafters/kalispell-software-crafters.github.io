@@ -1,0 +1,84 @@
+.hamburger-container {
+	padding: 8px 0;
+	width: 35px;
+	margin: 0.8em 0;
+	cursor: pointer;
+}
+
+.hamburger {
+	position: relative;
+	height: 3px;
+	width: 35px;
+	background-color: #fff;
+	border-radius: 3px;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: -8px;
+		height: 100%;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+
+	&::after {
+		position: absolute;
+		content: '';
+		top: 8px;
+		height: 100%;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 3px;
+	}
+}
+
+.nav {
+	padding: 1.2em 0;
+	display: none;
+
+	&.visible {
+		display: block;
+	}
+}
+
+.main-nav,
+.secondary-nav {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-item {
+	padding: 0.5em 0;
+
+	&_link {
+		text-decoration: none;
+		text-transform: uppercase;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		color: #fff;
+
+		&:hover {
+			opacity: 75%;
+		}
+	}
+}
+
+.main-nav {
+	margin-bottom: 1em;
+}
+
+@media (min-width: 700px) {
+	.nav {
+		justify-content: space-between;
+	}
+
+	.nav-item + .nav-item {
+		margin-left: 1em;
+	}
+
+	.hamburger-container {
+		display: none;
+	}
+}
