@@ -1,12 +1,25 @@
+.header-container {
+  position: relative;
+  height: 3em;
+}
+
 .hamburger-container {
-  padding: 8px 0;
-  width: 35px;
+  position: absolute;
+  right: 0;
+  padding: 0.7em 0;
   margin: 0.8em 0;
   cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger-container.open {
+  position: fixed;
+  margin-right: 1em;
 }
 
 .hamburger {
   position: relative;
+  right: 0;
   height: 3px;
   width: 35px;
   background-color: #fff;
@@ -16,7 +29,7 @@
 .hamburger::before {
   position: absolute;
   content: '';
-  top: -8px;
+  top: -0.6em;
   height: 100%;
   width: 100%;
   background-color: #fff;
@@ -26,20 +39,48 @@
 .hamburger::after {
   position: absolute;
   content: '';
-  top: 8px;
+  top: 0.6em;
   height: 100%;
   width: 100%;
   background-color: #fff;
   border-radius: 3px;
 }
 
+.hamburger.open {
+  background-color: transparent;
+}
+
+.hamburger.open::before {
+  top: 0.2em;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.hamburger.open::after {
+  top: 0.2em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .nav {
-  padding: 1.2em 0;
-  display: none;
+  padding: 2.2em 2em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+          transform: translate3d(100%, 0, 0);
+  width: auto;
+  height: 100vh;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: -webkit-transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1), -webkit-transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  background-color: rgba(41, 157, 207, 0.9);
 }
 
 .nav.visible {
-  display: block;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
 }
 
 .main-nav,
@@ -62,7 +103,7 @@
 }
 
 .nav-item_link:hover {
-  opacity: 75%;
+  color: #b3e7fd;
 }
 
 .main-nav {
@@ -74,17 +115,32 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: static;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: none;
+    transition: none;
+    background-color: transparent;
+    padding: 2.2em 0;
+    height: auto;
   }
   .nav-item + .nav-item {
     margin-left: 1em;
+  }
+  .header-container {
+    position: static;
+    height: auto;
   }
   .hamburger-container {
     display: none;
   }
 }
 
-* {
-  border-style: border-box;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
