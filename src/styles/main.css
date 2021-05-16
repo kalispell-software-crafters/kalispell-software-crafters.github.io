@@ -69,7 +69,7 @@
   margin-bottom: 1em;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .nav {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -111,7 +111,7 @@ p {
   margin: 0 auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
   .row {
     display: -webkit-box;
     display: -ms-flexbox;
