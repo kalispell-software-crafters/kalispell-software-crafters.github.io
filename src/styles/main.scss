@@ -1,7 +1,9 @@
 @import 'nav';
 
-* {
-	border-style: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 body {
@@ -28,7 +30,7 @@ p {
 	margin: 0 auto;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 800px) {
 	.row {
 		display: flex;
 	}
