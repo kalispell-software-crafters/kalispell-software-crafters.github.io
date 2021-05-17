@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
@@ -10,9 +11,14 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<div class="hamburger-container">
-					<div class="hamburger"></div>
+			<div class="header-container container">
+				<div
+					class="hamburger"
+					id="menu-toggle"
+					aria-label="Main menu"
+					tabindex="0"
+				>
+					<div></div>
 				</div>
 				<nav class="nav row">
 					<ul class="main-nav row">
@@ -39,7 +45,9 @@
 					</ul>
 					<ul class="secondary-nav row">
 						<li class="nav-item">
-							<a href="#" class="nav-item_link">Slack</a>
+							<a href="https://slack.com/" class="nav-item_link"
+								>Slack</a
+							>
 						</li>
 						<li class="nav-item">
 							<a
@@ -81,7 +89,7 @@
 							>If you're looking for something to help with we
 							have a list of items to do within our Readme to
 							flesh out this page. It's great for beginners who
-							want to particiapte in things like Hacktoberfest!</a
+							want to participate in things like Hacktoberfest!</a
 						>
 					</li>
 				</ul>
