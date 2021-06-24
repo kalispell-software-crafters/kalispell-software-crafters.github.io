@@ -1,3 +1,20 @@
+// handles keypresses for accessibility
+
+function handleClick(e){
+    if (e.type === 'keypress'){
+        let code = e.keyCode;
+        if((code === 32)|| (code === 13)){
+			console.log('we made it!!')
+            return true;
+        }
+    }
+    else {
+        return false;
+    }
+}
+
+document.addEventListener('keypress', handleClick);
+
 const hamburgerMenu = document.querySelector('.hamburger');
 const nav = document.querySelector('.nav');
 
@@ -29,6 +46,11 @@ const orgProfiles = document.querySelectorAll('.profile');
 // Add event listener to profiles
 for (let i = 0; i < orgProfiles.length; i++) {
 	orgProfiles[i].addEventListener('click', selectProfile);
+	orgProfiles[i].addEventListener('keypress', (e) => {
+		if (handleClick(e)) {
+			selectProfile(e);
+		}
+	});
 }
 
 // Function to select organizer profile -- updates from organizers data object
