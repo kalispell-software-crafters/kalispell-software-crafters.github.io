@@ -81,14 +81,14 @@ const organizers = {
 	Travis1: {
 		id: 1,
 		name: 'Travis Craft',
-		about: "I'm a Flathead native and remote software engineer. I want to connect with others to talk about software development and engineering. I first learned about software craftsmanship in the Fall of 2017 which lead me to create this group. I've learned a lot along the way!",
+		about: "I'm a Flathead native and remote software engineer. I want to connect with others to talk about software development and engineering. I first learned about software craftsmanship in the Fall of 2017 which led me to create this group. I've learned a lot along the way!",
 		profilePhoto:
 			'./imgs/travis.jpg'
 	},
 	Sam2: {
 		id: 2,
 		name: 'Sam Nordlinger',
-		about: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est. Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.',
+		about: 'Sam is a software developer currently working for Best Buy. Previously a resident of Flathead Valley, Sam now joins us remotely from Seattle. His interests include programming languages, functional programming, concurrency, and rollercoasters.',
 		profilePhoto:
 			'./imgs/sam.jpg'
 	},
