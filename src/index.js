@@ -3,7 +3,7 @@
 function handleClick(e) {
 	if (e.type === 'keypress') {
 		const code = e.keyCode;
-		if (code === 32 || code === 13) {
+		return code === 32 || code === 13;
 			return true;
 		}
 	} else {
