@@ -4,10 +4,6 @@ function handleClick(e) {
 	if (e.type === 'keypress') {
 		const code = e.keyCode;
 		return code === 32 || code === 13;
-			return true;
-		}
-	} else {
-		return false;
 	}
 }
 
