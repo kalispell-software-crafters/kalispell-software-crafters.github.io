@@ -1,3 +1,7 @@
+import samImgUrl from './imgs/sam.jpg';
+import skylerImgUrl from './imgs/skyler.jpg';
+import travisImgUrl from './imgs/travis.jpg';
+
 // handles keypresses for accessibility
 
 function handleClick(e) {
@@ -69,16 +73,16 @@ const organizers = {
 	Travis: {
 		name: 'Travis Craft',
 		about: "I'm a Flathead native and remote software engineer. I want to connect with others to talk about software development and engineering. I first learned about software craftsmanship in the Fall of 2017 which led me to create this group. I've learned a lot along the way!",
-		profilePhoto: './imgs/travis.jpg'
+		profilePhoto: travisImgUrl
 	},
 	Sam: {
 		name: 'Sam Nordlinger',
 		about: 'Sam is a software developer currently working for Best Buy. Previously a resident of Flathead Valley, Sam now joins us remotely from Seattle. His interests include programming languages, functional programming, concurrency, and rollercoasters.',
-		profilePhoto: './imgs/sam.jpg'
+		profilePhoto: samImgUrl
 	},
 	Skyler: {
 		name: 'Skyler Bexten',
 		about: 'Flathead native with computer science degree from UM. Fell in love with programming in a Java course. Likes JavaScript, test-driven development and plays with Haskell on the side. Reads too many books on the history of computer science and too much manga.',
-		profilePhoto: './imgs/skyler.jpg'
+		profilePhoto: skylerImgUrl
 	}
 };
