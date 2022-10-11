@@ -8,10 +8,22 @@ This gives our Meetup group a small project that we can work on together as we h
 
 ## Contents
 
+- [Installation](#installation)
 - [Contributing](#contributing)
 - [Branching and Merging Strategy](#branching-and-merging-strategy)
 - [Deployment](#deployment)
 
+
+## Installation
+
+Be sure to install Node and npm. Check that you have those with the following commands. Otherwise you can download them following the linked [instructions](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-installer-to-install-node-js-and-npm).
+
+- `node -v`
+- `npm -v`
+
+From the project directory run `npm i`. This will stall the project dependencies.
+
+You can then build the project with `npm run build`. You can then start the project with `npm run start`.
 
 ## Contributing
 
