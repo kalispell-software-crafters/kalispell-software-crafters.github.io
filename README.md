@@ -29,9 +29,13 @@ You can then build the project with `npm run build`. You can then start the proj
 
 If you would like to contribute to this repo take a look at the [Issues](https://github.com/kalispell-software-crafters/kalispell-software-crafters.github.io/issues) tab and assign yourself an issue to complete.
 
+You can fork the repo into your own account, make the updates, and submit a pull request to merge your fork back to our `develop` branch.
+
+[Forking documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects)
+
 ## Branching and Merging Strategy
 
-When updating the repo create a feature branch off of `develop`. When complete submit a pull request to merge the changes back into `develop`. Squash merge these changes when completing the PR.
+When updating the repo directly create a feature branch off of `develop`. When complete submit a pull request to merge the changes back into `develop`. Squash merge these changes when completing the PR.
 
 When we merge `develop` to `production` do NOT squash merge. Instead complete a regular merge.
 
