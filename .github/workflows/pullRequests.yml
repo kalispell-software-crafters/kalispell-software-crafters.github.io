@@ -11,6 +11,9 @@ jobs:
         run: | 
           echo "Verifying Install and Build"
 
+      - name: Checkout
+        uses: actions/checkout@v5
+
       - name: Setup Node.js
         uses: actions/setup-node@v5
         with:
