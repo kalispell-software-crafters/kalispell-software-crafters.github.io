@@ -1,4 +1,5 @@
-@import 'nav', 'bios';
+@use 'nav';
+@use 'bios';
 
 *,
 *::before,
