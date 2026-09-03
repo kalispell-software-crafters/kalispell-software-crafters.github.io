@@ -12,15 +12,17 @@
 	<body>
 		<header>
 			<div class="header-container container">
-				<div
+				<button
+					type="button"
 					class="hamburger"
 					id="menu-toggle"
-					aria-label="Main menu"
-					tabindex="0"
+					aria-label="Open navigation menu"
+					aria-expanded="false"
+					aria-controls="main-navigation"
 				>
-					<div></div>
-				</div>
-				<nav class="nav row">
+					<span class="hamburger__icon" aria-hidden="true"></span>
+				</button>
+				<nav class="nav row" id="main-navigation" aria-label="Main navigation">
 					<ul class="main-nav row">
 						<li class="nav-item">
 							<a href="#overview-section" class="nav-item_link"

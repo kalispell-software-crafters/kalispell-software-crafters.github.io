@@ -11,24 +11,34 @@ function handleClick(e) {
 
 document.addEventListener('keypress', handleClick);
 
-const hamburgerMenu = document.querySelector('.hamburger');
-const nav = document.querySelector('.nav');
+const hamburgerMenu = document.getElementById('menu-toggle');
+const nav = document.getElementById('main-navigation');
 
 let menuOpen = false;
 
+function setMenuState(open) {
+	menuOpen = open;
+	hamburgerMenu.classList.toggle('open', open);
+	nav.classList.toggle('visible', open);
+	hamburgerMenu.setAttribute('aria-expanded', String(open));
+	hamburgerMenu.setAttribute(
+		'aria-label',
+		open ? 'Close navigation menu' : 'Open navigation menu'
+	);
+}
+
 function toggleMenu() {
-	if (!menuOpen) {
-		hamburgerMenu.classList.add('open');
-		nav.classList.add('visible');
-		menuOpen = true;
-	} else {
-		hamburgerMenu.classList.remove('open');
-		nav.classList.remove('visible');
-		menuOpen = false;
-	}
+	setMenuState(!menuOpen);
 }
 
 hamburgerMenu.addEventListener('click', toggleMenu);
+
+document.addEventListener('keydown', event => {
+	if (event.key === 'Escape' && menuOpen) {
+		setMenuState(false);
+		hamburgerMenu.focus();
+	}
+});
 
 let currentProfile = document.querySelector('.profile--selected');
 const orgName = document.getElementById('about__name');
